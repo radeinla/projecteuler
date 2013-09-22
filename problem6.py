@@ -4,7 +4,7 @@ def sum_square_difference(n):
 	total = 0
 	for i in xrange(1, n+1):
 		for j in xrange(i+1, n+1):
-			print i, j
+			# print i, j
 			total = total + i*j
 	return total * 2
 

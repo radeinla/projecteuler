@@ -1,4 +1,5 @@
-import math
+
+from lib import prime_factors
 
 def primes(n):
 	table = [True]*(n+1)
@@ -16,16 +17,6 @@ def multiples(n):
 		if n % i == 0:
 			yield i
 
-def prime_factors(n):
-	for i in xrange(2, int(math.sqrt(n))+1):
-		if n % i == 0:
-			yield i
-			while n % i == 0:
-				n = n / i
-		if n == 1:
-			return
-
 if __name__ == '__main__':
-	print max(prime_factors(600851475143))
+	print(max(prime_factors(600851475143)))
 
-	

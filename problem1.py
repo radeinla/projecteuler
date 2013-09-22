@@ -6,4 +6,5 @@ def mul3and5(n):
 			yield i
 		i = i + 1
 
-print sum(mul3and5(10000))
+if __name__ == '__main__':
+	print sum(mul3and5(10000))

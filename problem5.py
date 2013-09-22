@@ -1,11 +1,4 @@
-
-
-def gcd(a, b):
-	if b == 0:
-		return a
-	else:
-		return gcd(b, a % b)
-
+from lib import gcd
 
 if __name__ == '__main__':
 	product = 1

@@ -20,3 +20,9 @@ if __name__ == '__main__':
 
 # 2*a*b + 2*a*c + 2*a*d + 2*a*e + 2*b*c + 2*b*d + 2*b*e + 2*c*d + 2*c*e + 2*d*e
 # 2(a*b + a*c + a*d + a*e + b*c + b*d + b*e + c*d + c*e + d*e)
+
+# you suck at linear algebra..... =)))
+# 0, 0, 0, 1 = 0
+# 1, 1, 1, 1 = 1
+# 8, 4, 2, 1 = 5
+# 27, 9, 3, 1 = 14

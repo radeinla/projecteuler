@@ -6,5 +6,4 @@ def mul3and5(n):
 			yield i
 		i = i + 1
 
-print sum(list(mul3and5(10000)))
-
+print sum(mul3and5(10000))

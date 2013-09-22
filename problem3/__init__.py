@@ -16,9 +16,14 @@ def multiples(n):
 		if n % i == 0:
 			yield i
 
-def prime_multiples(n):
-	for prime in primes(int(math.sqrt(n)+1)):
-		if n % prime == 0:
-			yield prime
+def prime_factors(n):
+	for i in xrange(2, int(math.sqrt(n))+1):
+		if n % i == 0:
+			yield i
+			while n % i == 0:
+				n = n / i
+		if n == 1:
+			return
 
-print max(prime_multiples(600851475143))
+if __name__ == '__main__':
+	print max(prime_factors(600851475143))

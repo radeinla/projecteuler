@@ -38,3 +38,18 @@ def gcd(a, b):
 		return a
 	else:
 		return gcd(b, a % b)
+
+def primes(n, gen = 1000000):
+	table = [True]*(gen+1)
+	table[0] = False
+	table[1] = False
+	j = 1
+	for i in xrange(2, gen):
+		if table[i]:
+			yield i
+			if j == n:
+				return
+			j = j + 1
+			for k in xrange(2*i, gen, i):
+				table[k] = False
+
